@@ -142,7 +142,9 @@ if os.getcwd() == '/app':
     SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 
     #accept headers and hosts
-    ALLOWED_HOSTS = ['*']
+    ALLOWED_HOSTS = ['learning-log.herokuapp.com']
+
+    DEBUG = False
 
     #CONFIG STATIC RESOURCE
     BASE_DIR = os.path.dirname(os.path.abspath(__file__))
